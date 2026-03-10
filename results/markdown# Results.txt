@@ -1,0 +1,15 @@
+markdown# Results
+
+This folder will contain the numerical results of the QVG fixed-point algorithm:
+
+- `Y_star_up.npy`      — Yukawa matrix Y*_u at the fixed point
+- `Y_star_down.npy`    — Yukawa matrix Y*_d at the fixed point  
+- `Y_star_lepton.npy`  — Yukawa matrix Y*_e at the fixed point
+- `Y_star_neutrino.npy`— Yukawa matrix Y*_ν at the fixed point
+- `rho_star.npy`       — Fixed-point distribution ρ*
+- `convergence_8starts.csv` — Convergence data from 8 initial conditions
+- `observables.csv`    — Predicted vs PDG 2024 values
+
+These files will be added upon completion of the full N=96 calculation.
+```
+
