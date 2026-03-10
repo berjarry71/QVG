@@ -125,7 +125,7 @@ for the full calculation.
                and the Cosmological Constant — One Framework, Five Axioms,
                Zero Free Standard Model Parameters},
   year      = {2026},
-  publisher = {Kindle Direct Publishing},
+  publisher = {KDP},
   note      = {arXiv: [to be added]}
 }
 ```
