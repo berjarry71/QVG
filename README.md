@@ -43,26 +43,16 @@ QVG/
 │   ├── yukawa_diag.py        # Yukawa diagonalization → physical masses
 │   ├── ckm_pmns.py           # CKM and PMNS matrix extraction
 │   ├── rge.py                # RGE evolution of couplings (1L and 2L)
-│   └── casimir.py            # Spectral Casimir correction
+│   └── casimir.py            # Spectral Casimir effect
 ├── results/
-│   ├── Y_star_up.npy         # Yukawa matrix Y*_u at fixed point
-│   ├── Y_star_down.npy       # Yukawa matrix Y*_d at fixed point
-│   ├── Y_star_lepton.npy     # Yukawa matrix Y*_e at fixed point
-│   ├── Y_star_neutrino.npy   # Yukawa matrix Y*_ν at fixed point
-│   ├── rho_star.npy          # Fixed-point distribution ρ*
-│   ├── convergence_8starts.csv  # Convergence from 8 initial conditions
-│   └── observables.csv       # Predicted vs PDG values
+│   └── README.md             # Results will be added upon N=96 completion
 ├── notebooks/
-│   ├── 01_fixed_point_demo.ipynb    # Step-by-step walkthrough
-│   ├── 02_masses_and_mixings.ipynb  # Mass predictions
-│   ├── 03_cosmological_constant.ipynb
-│   └── 04_casimir_prediction.ipynb
+│   └── (Jupyter notebooks — coming soon)
 ├── tests/
 │   ├── test_fixed_point.py
-│   ├── test_masses.py
-│   └── test_ckm_pmns.py
+│   └── test_spectral_triplet.py
 ├── docs/
-│   └── theory_notes.md       # Mathematical derivations
+│   └── theory_notes.md       # NCG/QVG boundary, proof status
 ├── requirements.txt
 └── LICENSE
 ```
@@ -72,28 +62,17 @@ QVG/
 ## Quick start
 
 ```bash
-git clone https://github.com/[username]/QVG.git
+git clone https://github.com/berjarry71/QVG.git
 cd QVG
 pip install -r requirements.txt
-python core/fixed_point.py
+python core/spectral_triplet.py
 ```
 
 Expected output:
 ```
-QVG Fixed-Point Algorithm — N=96
-Starting from 8 independent initial conditions...
-Run 1: converged in 2847 iterations | ||ρ - ρ*|| = 3.2e-8
-...
-Run 8: converged in 4203 iterations | ||ρ - ρ*|| = 1.8e-8
-Max distance between attractors: 4.1e-7 (uniqueness confirmed numerically)
-
-Predicted observables:
-  m_top    = 171.3 GeV    (PDG: 172.69,  Δ = 0.8%)
-  m_bottom = 4.10  GeV    (PDG: 4.18,    Δ = 1.9%)
-  m_tau    = 1.744 GeV    (PDG: 1.777,   Δ = 1.8%)
-  m_e      = 0.505 MeV    (PDG: 0.511,   Δ = 1.2%)
-  sin²θ_W  = 0.2312       (PDG: 0.2315,  Δ = 0.1%)
-  γ_CKM    = 65.4°        (PDG: 63.8±3.5°)
+N = 96 fermionic modes  ✓
+Tr(Y²)/Tr(T₃²) = 1.666667  [5/3 = 1.666667]  ✓
+sin²θ_W(uniform ρ) = 0.375000  [Connes: 3/8 = 0.375000]  ✓
 ```
 
 ---
@@ -114,7 +93,7 @@ Predicted observables:
 
 **External inputs:** Λ_GUT ≈ 2×10¹⁶ GeV and spectral cutoff function f.
 The claim "zero free parameters" applies specifically to the 19 Standard
-Model parameters. Λ_GUT and f constitute the two external inputs of the program.
+Model parameters. Λ_GUT and f are the two external inputs of the program.
 
 ---
 
@@ -125,28 +104,37 @@ Model parameters. Λ_GUT and f constitute the two external inputs of the program
 | γ (CKM angle) | 65.4° | Belle II | 2026–28 |
 | δ_PMNS | 1.32 rad | DUNE/HK | 2027–30 |
 | \|m_ββ\| | 7.41 meV | nEXO | 2029–32 |
-| Casimir δP/P | 0.3% at 65 μm | Dedicated exp. | 2027–30 |
+| Spectral Casimir | regime change at d* ≈ 62 μm | Dedicated exp. | 2027–30 |
 | Grav. decoherence | 10⁻²² s⁻¹ | MAQRO | 2030–35 |
+
+**Note on the Casimir prediction:** The QVG introduces a characteristic
+length scale d* = ℏc/E₀ ≈ 62 μm. For d < d*, the QVG correction to
+the Casimir pressure exceeds the standard QFT value. This is a change
+of physical regime, not a small perturbative correction.
 
 ---
 
 ## Citation
 
-If you use this code, please cite:
-
-```
-Jarry, B. (2026). Unification of 21st-Century Physics: General Relativity,
-Quantum Mechanics, the Standard Model, and the Cosmological Constant —
-One Framework, Five Axioms, Zero Free Standard Model Parameters.
-Published via KDP. arXiv:[to be added].
+```bibtex
+@book{jarry2026qvg,
+  author    = {Jarry, Bertrand},
+  title     = {Unification of 21st-Century Physics},
+  subtitle  = {General Relativity, Quantum Mechanics, the Standard Model,
+               and the Cosmological Constant — One Framework, Five Axioms,
+               Zero Free Standard Model Parameters},
+  year      = {2026},
+  publisher = {Kindle Direct Publishing},
+  note      = {arXiv: [to be added]}
+}
 ```
 
 ---
 
 ## License
 
-MIT License. See LICENSE file.
+MIT License — see [LICENSE](LICENSE).
 
 ## Contact
 
-[Your contact information]
+Bertrand Jarry — berjarry71 on GitHub
