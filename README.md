@@ -104,7 +104,7 @@ Model parameters. Λ_GUT and f are the two external inputs of the program.
 | γ (CKM angle) | 65.4° | Belle II | 2026–28 |
 | δ_PMNS | 1.32 rad | DUNE/HK | 2027–30 |
 | \|m_ββ\| | 7.41 meV | nEXO | 2029–32 |
-| Spectral Casimir | regime change at d* ≈ 62 μm | Dedicated exp. | 2027–30 |
+| Spectral Casimir | regime change at d* ≈ 62 μm
 | Grav. decoherence | 10⁻²² s⁻¹ | MAQRO | 2030–35 |
 
 **Note on the Casimir prediction:** The QVG introduces a characteristic
