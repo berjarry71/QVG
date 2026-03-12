@@ -120,7 +120,7 @@ for the full calculation.
 ```bibtex
 @book{jarry2026qvg,
   author    = {Jarry, Bertrand},
-  title     = {Unification of 21st-Century Physics},
+  title     = {Theory of Everything},
   subtitle  = {General Relativity, Quantum Mechanics, the Standard Model,
                and the Cosmological Constant — One Framework, Five Axioms,
                Zero Free Standard Model Parameters},
@@ -138,4 +138,4 @@ MIT License — see [LICENSE](LICENSE).
 
 ## Contact
 
-Bertrand Jarry — berjarry71 on GitHub
+Bertrand Jarry — https://github.com/berjarry71/QVG
