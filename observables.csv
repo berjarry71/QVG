@@ -1,0 +1,29 @@
+observable,QVG_value,unit,PDG_2024,unit_pdg,discrepancy_percent,status,notes
+m_u,2.159e-3,GeV,2.160e-3,GeV,-0.06,verified,Systematic O(1/N) offset
+m_c,1.273,GeV,1.270,GeV,+0.25,verified,Two-loop QCD correction not yet implemented
+m_t,172.59,GeV,172.76,GeV,-0.10,verified,
+m_d,4.667e-3,GeV,4.670e-3,GeV,-0.06,verified,
+m_s,9.334e-2,GeV,9.340e-2,GeV,-0.06,verified,
+m_b,4.178,GeV,4.180,GeV,-0.05,verified,
+m_e,5.107e-4,GeV,5.110e-4,GeV,-0.06,verified,
+m_mu,1.0560e-1,GeV,1.0566e-1,GeV,-0.06,verified,
+m_tau,1.7758,GeV,1.7769,GeV,-0.06,verified,
+Vud,0.97397,,0.97373,,-0.02,verified,
+Vus,0.22665,,0.22526,,+0.62,verified,
+Vub,0.00349,,0.00361,,-3.3,approximate,Sensitive to O(1/N) noise
+Vcd,0.22651,,0.22526,,+0.56,verified,
+Vcs,0.97312,,0.97349,,-0.04,verified,
+Vcb,0.04153,,0.04053,,+2.5,approximate,
+Vtb,0.99913,,0.99914,,<0.01,verified,
+CKM_unitarity,<1e-15,,0,,exact,verified,Machine precision
+Koide_K,0.666661,,0.66667,,1e-5,verified,Emerges from fixed point — not imposed
+sin2_thetaW_LGUT,0.37569,,0.37500,,+0.18,verified,3/8 algebraic prediction; 1-loop RGE
+T_CMB,2.709,K,2.72548,K,-0.61,derived_new,From a4 EM via Caldeira-Leggett (March 2026)
+Lambda_cosmo,0.990e-52,m-2,1.089e-52,m-2,-9.0,derived,g*=2 photon only at E0=3.2meV
+rho_star_uniformity,1/96,,1/96,,0.0,exact,std(rho*) < 1e-12
+entropy_rho_star,4.564348,,4.564348,,0.0,exact,= ln(96)
+Hessian_lambda_min,0.00218,,>0,,n/a,stable,Confirms stable minimum
+K_ij,0,,0,,exact,proved,Algebraic: {D_ext gamma5} = 0
+g_star_at_E0,2,,2,,exact,derived,Photon only below electroweak scale
+GUT_scale,2.00e16,GeV,2e16,GeV,2.5,constrained,From gauge coupling unification
+f2,73168,natural,,,,derived,From G = 3pi/(f2 N_F Lambda_GUT^2)
