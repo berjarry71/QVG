@@ -213,8 +213,8 @@ gauge couplings failing to unify; discovery of a fourth fermion generation.
 ```bibtex
 @misc{jarry2026qvg,
   author  = {Jarry, Bertrand},
-  title   = {Quantum Vacuum Geometry: Spectral Derivation of the Standard
-             Model Parameters, the Cosmological Constant, and the CMB Temperature},
+  title   = {THE UNIFICATION OF PHYSICS by QUANTUM VACUUM GEOMETRY
+How the Quantum Vacuum Geometry Encodes All of Physics},
   year    = {2026},
   note    = {viXra preprint},
   url     = {https://github.com/berjarry71/QVG}
